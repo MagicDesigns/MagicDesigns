@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Designs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>تسجيل العهد والمصاريف</h1>
+
+        <div class="input-section">
+            <label for="title">التاريخ:</label>
+            <input type="date" id="title">
+
+            <label for="price">مبلغ العهدة:</label>
+            <input type="number" id="price" placeholder="أدخل مبلغ العهدة">
+
+            <label for="discount">المصاريف:</label>
+            <input type="number" id="discount" placeholder="أدخل المصاريف">
+
+            <label for="total">الإجمالي:</label>
+            <span id="total" class="total-field"></span>
+
+            <button id="create">إضافة</button>
+        </div>
+
+        <div class="search-section">
+            <label for="search">البحث:</label>
+            <input type="text" id="search" placeholder="ابحث هنا...">
+        </div>
+
+        <div class="totals-section">
+            <h3>الإجماليات</h3>
+            <p>إجمالي العهد: <span id="totalAdvances">0</span></p>
+            <p>إجمالي المصاريف: <span id="totalExpenses">0</span></p>
+            <p>الفرق: <span id="difference">0</span></p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>العهدة</th>
+                    <th>المصاريف</th>
+                    <th>التاريخ</th>
+                    <th>الإجمالي</th>
+                    <th>تحديث</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
