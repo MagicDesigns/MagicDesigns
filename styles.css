@@ -94,3 +94,9 @@ thead {
         flex: 1 1 100%;
     }
 }
+#companyLogo {
+    max-width: 150px; /* تحديد العرض الأقصى */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    display: block;
+    margin: 0 auto; /* لجعل الصورة في منتصف الصفحة */
+}
